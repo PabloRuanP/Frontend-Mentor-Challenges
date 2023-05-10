@@ -1,0 +1,42 @@
+@charset 'utf-8'
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap')
+
+@import './_navbar'
+@import './_banner'
+@import './_containersection'
+@import './_client'
+@import './_cardimages'
+@import './_footer'
+
+
+$primary-color: #007bff
+$font-barlow: 'Barlow', sans-serif
+$font-frauces: 'Fraunces', sans-serif
+$footer-color: rgba(163,221,207,1)
+
+*
+    box-sizing: border-box
+    margin: 0px
+    padding: 0px
+
+
+html, body 
+    display: block
+
+h1, h2, h4
+    font-family: $font-frauces
+
+p
+    font-family: $font-barlow!important
+a
+  color: $primary-color
+  text-decoration: none
+  font-size: 14pt
+  &:hover
+    text-decoration: underline
+  
+
+.py-3.my-4
+    background-color: $footer-color

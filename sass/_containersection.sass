@@ -1,0 +1,131 @@
+
+$height-image: 41vw
+$small: 576px
+$medium: 768px
+$large: 992px
+$extra-large: 1200px
+
+.section-box
+        display: flex
+        flex-wrap: wrap
+
+.card-container
+        flex-basis: 50%
+        display: flex
+        align-items: center
+        padding: 10%
+
+        @media screen and (max-width: $large) and (orientation: portrait), screen and (max-width: $extra-large) and (orientation: landscape)
+                padding: 4% 8%
+
+        @media screen and (max-width: $medium ) and (orientation: portrait), screen and (max-width: $large ) and (orientation: landscape)
+                padding: 2% 7%
+
+        @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium ) and (orientation: landscape)
+                padding: 0 6%
+
+        @media screen and (max-width: $medium )
+                transition: 0.5s ease
+                flex-basis: 100%
+                padding: 12%
+                height: 63vh!important
+
+        @media screen and (max-width: 300px )
+                padding: 5%
+
+        #card-text
+                text-align: center
+
+        #card-text-left
+                text-align: left
+
+                #learn-link
+                        display: flex
+                        cursor: pointer
+
+                        .learn-link-houver-1
+                                background-color: rgb(255 255 0 / 55%)
+                                width: 7em
+                                height: 10px
+                                position: absolute
+                                z-index: -1
+                                border-radius: 14%
+                                margin-top: 14px
+
+                        .learn-link-houver-2
+                                background-color: rgb(255 129 230 / 46%)
+                                width: 7em
+                                height: 10px
+                                position: absolute
+                                z-index: -1
+                                border-radius: 14%
+                                margin-top: 14px
+
+                        &:hover
+                                .learn-link-houver-1
+                                        background-color: rgb(255 255 0 / 84%)
+
+                                .learn-link-houver-2
+                                        background-color: rgb(255 129 230 / 90%)
+
+@media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+        #order-1
+                order: 2
+        #order-4
+                order: 4
+
+#first-section-image
+        background-image: url('../images/desktop/image-transform.jpg')
+        background-size: cover
+        width: 100%
+        height: $height-image
+
+        @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+                background-size: cover
+                background-position: center
+                height: 38vh!important
+                order: 1
+
+#second-section-image
+        background-image: url('../images/desktop/image-stand-out.jpg')
+        background-size: cover
+        width: 100%
+        height: $height-image
+
+        @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+                background-size: cover
+                background-position: center
+                height: 38vh!important
+                order: 3
+
+#third-section-image
+        background-image: url('../images/desktop/image-graphic-design.jpg')
+        background-size: cover
+        width: 100%
+        height: $height-image
+        align-items: end
+
+        @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+                background-size: cover
+                background-position: center
+                order: 5
+        h2
+                color: rgb(16 64 55)
+        p
+                color: rgb(41 141 122)
+
+#fourth-section-image
+        background-image: url('../images/desktop/image-photography.jpg')
+        background-size: cover
+        width: 100%
+        height: $height-image
+        align-items: end
+
+        @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+                background-size: cover
+                background-position: center
+                order: 6
+        h2
+                color: rgb(16 64 82)
+        p
+                color: rgb(22 102 133)

@@ -1,0 +1,28 @@
+
+$small : 414px
+$medium : 500px
+footer
+    @media screen and (max-width: $small ) and (orientation: portrait), screen and (max-width: $medium) and (orientation: landscape)
+        img
+            width: 15em!important
+    
+    background-color: hsl(168deg 42.71% 54.64%)
+    padding: 1%
+
+    img
+        padding: 5%
+        width: 20em
+        max-width: 100%
+
+    #nav-menu
+        gap: 3em
+    #social-footer
+        gap: 1.4em
+    a:hover
+        color: #fff
+    .container
+        text-align: center
+    @media screen and (max-width: 300px )
+        #nav-menu
+            flex-direction: column
+            gap: 1em
